@@ -16,6 +16,7 @@
       <div class="form-group">
         <label>Plot:</label>
         <input type="text" class="form-control" v-model="plot">
+        <small>{{ 30 - body.length }} characters remaining</small>
       </div>
       <input type="submit" class="btn btn-primary" value="Submit">
     </form>
