@@ -11,12 +11,22 @@
         Sort Alphabetically
       </button> 
 
-
+<!-- 
      <div v-for="movie in orderBy(filterBy(movies, titleFilter, 'title'), 'title')">
       <h2>Title: {{ movie.title }}</h2>
       <p>Year: {{ movie.year }}</p>
       <p>Plot: {{ movie.plot }}</p>
-      <button v-on:click="showMovie(movie)">More Info</button>
+      <button v-on:click="showMovie(movie)">More Info</button> -->
+      <div class="card-columns">
+      <div class="card" v-for="movie in movies">
+        <router-link :to="`/movies/${movie.id}`">
+        </router-link>
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <p class="card-text">Year: {{ movie.year}}</p>
+          <p class="card-text">Plot: {{ movie.plot }}</p>
+        </div>
+      </div>
 
     </div>
   </div>

@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    
     <h1>{{ message }}</h1>
     <div>
       <h3>Add Another Movie</h3>
@@ -29,6 +30,7 @@
         <button>Close</button>
       </form>
     </dialog>
+    
 
     
 
